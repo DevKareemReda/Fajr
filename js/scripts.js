@@ -6,13 +6,11 @@ $(function () {
         loop: false,
         controlsPosition: 'top',
         nav: false,  
-        loop: true,
         mouseDrag: true,
         controlsContainer: '.slider-nav',
         responsive: {
           0: {
-            items: 1,
-            edgePadding: 20
+        items: 1,
           },
           700: {
             items: 2,
