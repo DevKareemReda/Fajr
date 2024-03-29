@@ -18,6 +18,7 @@ body {
     font-size: 14px;
     color: #000;
     background-color: #F8F9F9;
+    padding-top: 66px;
 }
 
 
@@ -51,20 +52,20 @@ body {
     right: -100%;
 }
 
-p.main-desc {
+.main-desc {
     font-size: 44px;
     font-weight: 600;
     color: #0F172A;
 }
 
 @media screen and (max-width: 768px) {
-    p.main-desc {
+    .main-desc {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    p.main-desc {
+    .main-desc {
         font-size: 17px;
     }
 }
@@ -117,7 +118,7 @@ p {
     z-index: 2;
 }
 
-.navbar::before {
+/* .navbar::before {
     content: "";
     position: absolute;
     top: 0;
@@ -126,7 +127,7 @@ p {
     height: 148px;
     border-bottom-right-radius: 40px;
     background-color: var(--main-color);
-}
+} */
 
 .navbar-nav a.logo {
     z-index: 444;
@@ -232,6 +233,7 @@ p {
     display: flex;
     align-items: start;
     max-width: 356px;
+    width: 100%;
     margin-left: -50%;
 }
 
@@ -442,6 +444,7 @@ p {
         font-size: 14px;
         text-align: justify;
     }
+
     .section-hero .hero-img::before,
     .section-hero .hero-img::after {
         right: 50%;
@@ -463,9 +466,11 @@ p {
     transform: translateY(-50%);
     background-color: var(--main-color);
 }
+
 .line-after.bg-gray {
     background-color: #F8F9F9;
 }
+
 .accredible-img {
     margin-top: 40px;
 }
@@ -652,10 +657,12 @@ p {
     }
 
 }
+
 @media screen and (max-width: 576px) {
     .main-study h2 {
         font-size: 30px;
     }
+
     .main-study h2::after {
         right: -27px;
         width: 50px;
@@ -729,6 +736,9 @@ p {
     top: 50%;
     z-index: -1;
     transform: translateY(-50%);
+}
+
+.text-danger .line-before::before {
     background-color: var(--main-color);
 }
 
@@ -917,7 +927,7 @@ p {
     color: #6B7A85;
 }
 
-#tns1 > .tns-item {
+#tns1>.tns-item {
     width: 427px !important;
 }
 
@@ -954,12 +964,268 @@ hr {
 }
 
 .footer-link a {
-    color: rgba(0,0,0,.70);
+    color: rgba(0, 0, 0, .70);
 }
+
 .footer-link a.text-link {
     color: #0d6efd !important;
 }
 
 .text-gray {
     color: #6B7A85 !important;
+}
+
+
+/* ++++ programes pages +++++ */
+.program-img {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../images/program.jpeg") center center / cover;
+}
+
+.program-img p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+}
+
+@media screen and (max-width: 768px) {
+    .program-img p {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 33px;
+    }
+}
+
+a.line-before::before {
+    background-color: #A5A5A5 !important;
+}
+
+a.line-before.text-gray {
+    color: #A5A5A5 !important;
+}
+
+a.line-before.text-gray::after {
+    content: "/";
+    margin: 0 10px;
+}
+
+.classic-desc {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs li a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #A5A5A5;
+    margin-right: 24px;
+    padding: 10px 0;
+    transition: 150ms linear;
+    display: block;
+}
+
+.tabs li a.active,
+.tabs li a:hover {
+    color: var(--dark-blue);
+    border-bottom: 1px solid #00f;
+}
+
+@media screen and (max-width: 768px) {
+    .classic-desc {
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tabs li {
+        margin-bottom: 10px;
+    }
+
+    .tabs li a {
+        font-size: 14px;
+    }
+
+    .classic {
+        font-size: 14px;
+    }
+}
+
+/* ++++ life page +++++ */
+.life form {
+    max-width: 344px;
+    height: 56px;
+    margin-top: 30px;
+}
+
+.life form input {
+    width: 100%;
+    height: 100%;
+    padding: 9px 45px 9px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+::placeholder {
+    color: #A5A5A5;
+}
+
+.life form svg {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.life-items {
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
+.life-items img {
+    border-radius: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.life-items h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.life-items p {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #6B7A85;
+}
+
+
+@media screen and (max-width: 992px) {
+    .life form {
+        margin: 30px auto 0;
+    }
+
+    .life-items h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .life-items p {
+        font-size: 13px;
+    }
+}
+
+/* ++++ contact page +++++ */
+.contact-box {
+    background-color: var(--dark-blue);
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-box::before {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    right: -70px;
+    max-width: 269px;
+    width: 100%;
+    height: 269px;
+    background-color: #fff;
+    opacity: .5;
+    border-radius: 50%;
+}
+
+.contact-box::after {
+    content: "";
+    position: absolute;
+    bottom: 90px;
+    right: 90px;
+    max-width: 138px;
+    width: 100%;
+    height: 138px;
+    background-color: #fff;
+    opacity: .5;
+    border-radius: 50%;
+}
+
+.contact-box ul li {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    letter-spacing: .5px;
+    margin-bottom: 22px;
+}
+
+.contact-box ul li svg {
+    margin-right: 10px;
+}
+
+.contact-box .social {
+    margin-top: 130px;
+}
+
+.contact-box .social li a {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #000;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 24px;
+    transition: 150ms linear;
+}
+
+.contact-box .social li a:hover {
+    background-color: #fff;
+    color: var(--dark-blue);
+}
+
+.form-contact label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    ;
+}
+
+.form-contact input,
+.form-contact textarea {
+    width: 100%;
+    height: 55px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #A5A5A5;
+    transition: 150ms linear;
+    color: var(--dark-blue);
+    margin-bottom: 45px;
+}
+
+.form-contact input:focus,
+.form-contact textarea:focus {
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+.form-contact button.btn {
+    padding: 15px 48px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    font-size: 16px;
 }
