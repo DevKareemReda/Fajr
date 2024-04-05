@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fajr</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/animate.min.css">
     <link rel="stylesheet" href="css/libs/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -44,8 +45,8 @@
                             Media <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu fade">
-                            <li><a class="dropdown-item" href="#">Photos</a></li>
-                            <li><a class="dropdown-item" href="#">Videos</a></li>
+                            <li><a class="dropdown-item" href="photo.html">Photos</a></li>
+                            <li><a class="dropdown-item" href="video.html">Videos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -63,7 +64,7 @@
                         <a class="nav-link" href="life.html">Life in Egypt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
@@ -76,8 +77,9 @@
     </nav>
     <!-- ./navbar -->
 
-    <section class="section">
-        <div class="container">
+    <!-- classical -->
+    <section class=" pt-66">
+        <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-lg-12 ">
                     <h3 class="main-title ps-2 classic">
@@ -99,6 +101,7 @@
             </div>
         </div>
     </section>
+    <!-- ./classical -->
 
     <!-- ./footer -->
     <footer class="section footer-area">
@@ -221,10 +224,18 @@
     </footer>
     <!-- ./footer -->
 
+    <!-- (((( preloader )))) -->
+    <section class="preloader">
+        <div class="spinner"></div>
+    </section>
+    <!-- ./preload -->
+
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/libs/wow.min.js"></script>
     <script src="js/libs/popper.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/classical.js"></script>
 </body>
 
 </html>
