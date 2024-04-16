@@ -1,15 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 0 version
-*/
-
-/*
-* Autoprefixer
-* Browsers: last 0 version
-*/
-
 /* _____ Import files _____ */
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
@@ -291,10 +279,11 @@ p {
 
 .navbar-nav .nav-item a.nav-link {
     padding: 6px 10px;
+    font-size: 16px;
 }
 
 .navbar-nav .nav-item a.nav-link {
-    color: var(--light-gray) !important;
+    /* color: var(--light-gray) !important; */
     font-weight: 600;
     display: block;
     -webkit-transition: 0.3s linear;
@@ -421,8 +410,11 @@ p {
 .section-hero {
     background-color: #f7f6f6;
     z-index: 1;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-hero::after {
@@ -438,6 +430,7 @@ p {
 }
 
 .section-hero ul.language {
+    margin-top: 50px;
     width: 197px;
     overflow: hidden;
     -webkit-transition: 350ms linear;
@@ -565,24 +558,18 @@ p {
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
     border-radius: 18px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -webkit-align-items: start;
-    -moz-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
     max-width: 323px;
-    margin-left: -50%;
-    z-index: 3;
-    position: relative;
+    position: absolute;
+    right: 29%;
+    top: 16%;
+    margin-left: 0;
+    z-index: 444;
     background: rgb(244, 243, 248);
     -webkit-box-shadow: 0px 18px 37.5px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 18px 37.5px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 18px 37.5px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: start;
 }
 
 .section-hero .hero-item img {
@@ -599,6 +586,7 @@ p {
 .section-hero .hero-img {
     z-index: 11;
     position: relative;
+    margin-top: -27px;
 }
 
 .section-hero .hero-img img {
@@ -653,20 +641,26 @@ p {
 }
 
 @media screen and (max-width: 992px) {
+    .section-hero {
+        height: 100%;
+        min-height: 100vh;
+    }
+    .section-hero {
+        padding-top: 66px;
+    }
     .section-hero::after {
         display: none;
     }
-
     .section-hero .hero-item {
         margin: 0;
-        max-width: 100%;
+        max-width: calc(100% - 30px);
+        position: static;
+        margin: 20px auto;
+        background: #fff;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .section-hero .hero-item {
-        margin-bottom: 60px;
-    }
     .section-hero .hero-parent {
         margin-top: 30px;
     }
