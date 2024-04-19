@@ -1,4 +1,4 @@
-let allTabs = document.querySelectorAl(".tabs li a");
+let allTabs = document.querySelectorAll(".tabs li a");
 allTabs.forEach((el) => {
     el.onclick = function (e) {
         e.preventDefault();
